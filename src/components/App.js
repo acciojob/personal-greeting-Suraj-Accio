@@ -1,11 +1,10 @@
+import React, { useState } from "react";
 
-import React, {useState} from "react";
-import './../styles/App.css';
+function App() {
+ const [name, setName] = useState("");
 
-const App = () => {
-const [name, setName] = useState("");
-  return (
-    <div>
+ return (
+   <div>
      <p>Enter your name:</p>
      <input
        type="text"
@@ -14,7 +13,8 @@ const [name, setName] = useState("");
      />
      {name ? <p>Hello {name}!</p> : null}
    </div>
-  )
+ );
 }
 
-export default App
+export default App;
+
